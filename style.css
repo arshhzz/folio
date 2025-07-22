@@ -596,6 +596,19 @@ body.light-mode {
   color: var(--text-main);
   background: var(--bg-gradient);
 }
+body.light-mode header {
+  background: #fff;
+  border-bottom: 1.5px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(59,130,246,0.06);
+}
+body.light-mode .logo,
+body.light-mode .nav-links a {
+  color: #232b39 !important;
+}
+body.light-mode .nav-links a.active {
+  color: var(--accent-2) !important;
+  border-bottom: 2px solid var(--accent-2);
+}
 
 /* === Mobile Menu === */
 #mobile-menu-btn {
