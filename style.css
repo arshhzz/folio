@@ -724,7 +724,9 @@ body.light-mode .nav-links a.active {
 } 
 
 .education-grid {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
@@ -736,7 +738,7 @@ body.light-mode .nav-links a.active {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 48px 48px;
 }
@@ -745,6 +747,7 @@ body.light-mode .nav-links a.active {
     flex-direction: column;
     gap: 24px;
     padding: 32px 12px;
+    align-items: center;
   }
   .education-grid {
     max-width: 100%;
