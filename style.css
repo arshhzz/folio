@@ -107,6 +107,10 @@ header > nav {
   align-items: center;
   height: 64px;
 }
+.nav-links a.active {
+  color: var(--accent-2) !important;
+  border-bottom: 2px solid var(--accent-2);
+}
 .hero-animated-bg {
   position: relative;
   overflow: hidden;
