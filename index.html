@@ -18,15 +18,23 @@
                 <li><a href="#contact" class="logo">Contact</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle dark/light mode" style="margin-left:24px;font-size:1.5rem;background:none;border:none;cursor:pointer;">🌙</button>
+            <button id="mobile-menu-btn" aria-label="Open navigation menu" style="display:none;">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay"></div>
 
     <main>
         <section id="hero" class="hero">
             <div class="container">
                 <h1 class="fade-in" data-text="Arshdeep Singh">Arshdeep Singh</h1>
                 <p class="fade-in">Full Stack Developer & Problem Solver</p>
-                <p class="fade-in" style="font-size: 1.25rem; color: var(--text-secondary, #9ca3af); max-width: 720px; margin: 24px auto 48px; font-weight: 400; line-height: 1.7;">
+                <p class="fade-in hero-description">
                     Passionate Computer Science student with a strong foundation in Data Structures, Algorithms, and System Design. Experienced in competitive programming and full‑stack development, with a proven ability to build robust, scalable applications. Eager to contribute to innovative projects and collaborate in high‑impact teams.
                 </p>
                 <a href="#education" class="cta-button fade-in">Explore My Work</a>
@@ -38,7 +46,7 @@
                 <h2 class="section-title">Education & Achievements</h2>
                 <div class="education-grid">
                     <div class="education-card fade-in">
-                        <div style="flex:1;min-width:220px;">
+                        <div class="education-section">
                             <h3>Bachelor of Computer Science</h3>
                             <p>Lovely Professional University, Punjab - Ind</p>
                             <p>2022 - 2026</p>
@@ -48,9 +56,9 @@
                             <p>2021 - 2022</p>
                             <p>90.8%</p>
                         </div>
-                        <div style="flex:1;min-width:220px;">
+                        <div class="education-section">
                             <h3>Key Achievements</h3>
-                            <ul style="margin:0 0 12px 18px; padding:0; list-style: disc; color:var(--text-main);">
+                            <ul>
                                 <li>500 + problems on Leetcode, Cses, hackerEarth and other platforms</li>
                                 <li>Leetcode(1531) & CodeChef(1550)</li>
                                 <li>GsSoc' 24 Contibutor</li>
@@ -59,9 +67,9 @@
                                 <li>Contributed to Smart India Hackathon (SIH) 2024</li>
                             </ul>
                         </div>
-                        <div style="flex:1;min-width:220px;">
+                        <div class="education-section">
                             <h3>Technical Skills</h3>
-                            <ul style="margin:0 0 12px 18px; padding:0; list-style: disc; color:var(--text-main);">
+                            <ul>
                                 <li>C++, JavaScript, Java, TypeScript</li>
                                 <li>React.js, Next.js, HTML, CSS, Tailwind, Node.js, Express.js, REST API</li>
                                 <li>MongoDB, PostgreSQL, MySQL</li>
@@ -106,7 +114,7 @@
                         <div class="project-image">🛒</div>
                         <div class="project-content">
                             <h3>Mentor Sync</h3>
-                            <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard. Built with MERN stack and deployed on AWS with high scalability.</p>
+                            <p>In Progress</p>
                             <a href="https://github.com/johndoe/ecommerce" class="project-link">In Progress →</a>
                         </div>
                     </div>
@@ -143,21 +151,21 @@
         <section id="contact" class="hero">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
-                <p style="font-size: 21px; color: #86868b; margin-bottom: 40px;">
+                <p class="contact-subtitle">
                     Let's build something amazing together
                 </p>
-                <div style="display: flex; gap: 32px; justify-content: center; align-items: center; margin-top: 16px;">
-                    <a href="https://twitter.com/arshdeep0907" aria-label="Twitter" target="_blank" rel="noopener" style="font-size: 1.7rem; color: #1da1f2; text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+                <div class="contact-links">
+                    <a href="https://twitter.com/arshdeep0907" aria-label="Twitter" target="_blank" rel="noopener" class="contact-link">
                         🐦
-                        <span style="font-size: 1rem; color: #1da1f2; margin-top: 4px;">Twitter</span>
+                        <span>Twitter</span>
                     </a>
-                    <a href="mailto:arshdeepkhalsa60@gmail.com" aria-label="Email" style="font-size: 1.7rem; color: #007aff; text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+                    <a href="mailto:arshdeepkhalsa60@gmail.com" aria-label="Email" class="contact-link">
                         ✉️
-                        <span style="font-size: 1rem; color: #007aff; margin-top: 4px;">Email</span>
+                        <span>Email</span>
                     </a>
-                    <a href="https://linkedin.com/in/arshdeepsingh09" aria-label="LinkedIn" target="_blank" rel="noopener" style="font-size: 1.7rem; color: #0a66c2; text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+                    <a href="https://linkedin.com/in/arshdeepsingh09" aria-label="LinkedIn" target="_blank" rel="noopener" class="contact-link">
                         🔗
-                        <span style="font-size: 1rem; color: #0a66c2; margin-top: 4px;">LinkedIn</span>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
             </div>
