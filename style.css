@@ -318,6 +318,9 @@ header > nav {
   will-change: transform, box-shadow;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  min-width: fit-content;
 }
 
 .cta-button:hover,
@@ -833,6 +836,8 @@ footer p {
   .cta-button {
     padding: 16px 32px;
     font-size: 18px;
+    width: auto;
+    display: inline-block;
   }
   
   .education-card {
